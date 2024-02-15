@@ -25,14 +25,14 @@ img {
     display: block;
 
  } 
-.container{
-    width: 1158px;
-    padding:0px 15px;
-    margin: 0px auto;
+ .container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
-    
-}
 .container-header{
     display: flex;
     align-items: center;
@@ -71,10 +71,10 @@ img {
 
 
 .section-first{
-    max-width: 1440px;
+    max-width: 320px;
     background-color:rgba(46, 47, 66, 0.70);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg_section-1.jpg)  ;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,18 +128,16 @@ img {
     .title{
         color:#FFF;
         text-align: center;
-        font-size: 56px;
-        line-height: 1.07 ;
+        font-size: 36px;
+        line-height: 40px;
         font-weight: 700;
-        letter-spacing: 0.02em ;
-        
-        
-         margin-right: auto;
+        letter-spacing: 0.72px;
+        margin-right: auto;
          margin-left: auto;
          display: block;
-        margin-bottom: 48px;
-         max-width: 496px;
-         max-height: 120px;
+        margin-bottom: 72px;
+         max-width: 216px;
+         max-height: 160px;
          
         
         
@@ -170,7 +168,10 @@ img {
 }
 
 .section-second{
-    padding: 120px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+   
+   
 }
 .icon-list{
     display: flex;
@@ -179,7 +180,7 @@ img {
 
 }
 .icon_container{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -197,14 +198,14 @@ img {
 
 
 .list-one{
-    display: flex;
+    display: block;
+    row-gap: 72px;
+    }
+.item_one
+{
     
-    gap: 24px;
-
-
-}
-.item_one{
-    width: calc((100% - 72px) / 4); 
+    width: 100%;
+    
 }
 
 
@@ -226,11 +227,13 @@ overflow: hidden;
 
 .title-terms{
     color:#2E2F42;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.2 ;
     letter-spacing: 0.02em ;
     font-weight: 500;
     margin-bottom: 8px;
+    text-align: center;
+    
 }
 .text-terms{
     color:#434455;
@@ -238,9 +241,12 @@ overflow: hidden;
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: 0.02em;
-    width: 264px;
+    width: 288px;
     height: 72px;
+    
+    
 }
+
 .section-third{
     background-color:#F4F4FD;
     padding: 120px 0 ;
@@ -593,6 +599,7 @@ margin-bottom: 16px;
     letter-spacing: 0.48px;
 }
 .model_container{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -795,3 +802,86 @@ margin-bottom: 16px;
     {
         background-color:#404BBF  ; 
     }
+
+    @media screen and (min-width: 768px) {
+        .container {
+          max-width: 752px;
+          padding: 0px 16px;
+
+
+        }
+        .section-first{
+            max-width: 768px;
+            background-size: cover;
+            padding-top: 121px;
+            padding-bottom: 121px;
+
+        }
+        .title{
+            font-size: 56px; 
+            margin-bottom: 36px; 
+            max-width: 496px;
+            max-height: 120px;
+            line-height: 1.07 ;
+            letter-spacing: 0.02em ;
+        }
+       
+         .section-second{
+            padding: 96px ;
+            
+         }
+         
+       
+         .item_one{
+           
+         }
+         .title-terms{
+            text-align: start;
+         }
+      }
+     
+      
+      
+      
+      @media screen and (min-width: 1158px) {
+        .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+  }   
+        .section-first{
+            max-width: 1440px;
+            background-size: cover;
+            padding-top: 188px;
+            padding-bottom: 188px;
+
+        }
+        .title{
+            font-size: 56px;
+            margin-bottom: 48px; 
+            max-width: 496px;
+            max-height: 120px;
+            line-height: 1.07 ; 
+            letter-spacing: 0.02em ;
+        }
+        .section-second{
+            width: 1440px;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .icon_container{
+            display: flex;
+        }
+        .list-one{
+           display: flex ;
+           gap: 24px;
+           
+            
+        }
+        .item_one{
+             width: calc((100% - 72px) / 4);  
+        }
+        .title-terms{
+            font-size: 20px;
+        }
+    }  
