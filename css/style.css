@@ -79,11 +79,24 @@ img {
     background-color:rgba(46, 47, 66, 0.70);
     padding-top: 72px;
     padding-bottom: 72px;
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob.jpg)  ;
+    background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+     url(../images/Dark-bg-mob.jpg)  ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+    }
+    @media screen and (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),(min-resolution:2dppx)
+    {
+        .section-first{
+            background-image: linear-gradient( 
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                 url(../images/Dark-bg-mob-2x.jpg)  ;
+        }  
     }
     
     .link{
@@ -951,6 +964,15 @@ margin-bottom: 16px;
             padding-bottom: 121px;
 
         }
+        @media screen and (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),(min-resolution:2dppx)
+    {
+        .section-first{
+            background-image: linear-gradient( 
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                 url(../images/Dark-bg-tab-2x.jpg)  ;}
+        } 
         .title{
             font-size: 56px; 
             margin-bottom: 36px; 
@@ -1056,6 +1078,15 @@ margin-bottom: 16px;
             padding-bottom: 188px;
 
         }
+        @media screen and (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),(min-resolution:2dppx)
+    {
+        .section-first{
+            background-image: linear-gradient( 
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                 url(../images/people-office-2x.png)  ;}
+        } 
         section{
             padding:120px 0px;
         }
